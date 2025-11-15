@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search UI</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="hero">
+    <div class="overlay"></div>
+
+    <div class="top-bar">
+        <h1>Find your film</h1>
+        <a href="watchlist.html" class="watchlist" id="watch">My Watchlist</a>
+    </div>
+</div>
+
+<div class="search-wrapper">
+    <div class="search-bar">
+        <span class="icon">🔍</span>
+        <input type="text" placeholder="Blade Runner" id="movie-search">
+        <button id="search-btn">Search</button>
+    </div>
+</div>
+
+
+<div class="movies-container" id="movies-container"></div>
+
+
+<div class="empty-state" id="empty-state">
+    <div class="empty-icon">🎞️</div>
+    <p>Start exploring</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

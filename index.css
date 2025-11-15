@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: url("images/cover_img.png") center/cover no-repeat;
+}
+
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.top-bar {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;             
+    
+    padding: 2.5rem;
+    
+    max-width: 1200px;                
+    margin: 0 auto;                    
+}
+
+
+.top-bar h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.watchlist {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.search-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;   
+    position: relative;
+}
+
+.search-bar {
+    position: relative;
+    margin: 1rem 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100vh;
+}
+
+.search-bar .icon {
+    position: absolute;
+    left: 12px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 35px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background: #ccc;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.empty-state {
+    margin-top: 7rem;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.empty-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+}
+
+.movies-container {
+    width: 100%;
+    max-width: 80vh;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.movie-card {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+
+.movie-poster {
+    width: 110px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.movie-info {
+    flex: 1;
+    color: white;
+}
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.movie-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.movie-rating {
+    font-size: 1rem;
+    color: #ffd700;
+}
+
+.watchlist-btn {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.remove-btn{
+    font-size: 0.9rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.movie-meta {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.movie-description {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+.movie-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 1.5rem 0;
+}
+
+
+
+@media (max-width: 900px) {
+    .hero {
+        height: 35vh;
+    }
+
+    .top-bar h1 {
+        font-size: 3rem;
+    }
+    .watchlist{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .hero {
+        height: 30vh;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .top-bar h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .watchlist {
+        font-size: 1.4rem;
+    }
+
+    .search-bar {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .search-bar input {
+        font-size: 0.95rem;
+        padding: 10px 40px 10px 35px;
+    }
+
+    .search-bar button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .empty-state {
+        margin-top: 5rem;
+    }
+}
+
